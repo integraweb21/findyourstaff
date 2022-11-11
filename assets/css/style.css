@@ -1,0 +1,14 @@
+/* Mise en page */
+
+a, :hover{
+    text-decoration: none !important;
+}
+
+:hover{
+    transition: all 0.3s ease-in-out 0s;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
