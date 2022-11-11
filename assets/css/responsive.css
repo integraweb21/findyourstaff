@@ -2,8 +2,24 @@
 
 @media screen and (min-width: 992px){
 
+    /* Banner */
 
+    #banner{
+        padding-top: 60px;
+        padding-bottom: 191px;
+    }
 
+    /* Footer */
+
+    footer nav ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav a{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 /* Tablette */
@@ -12,4 +28,12 @@
 
 /* Mobile */
 
-@media screen and (max-width: 992px){}
+@media screen and (max-width: 768px){
+
+    /* Banner */
+
+    #banner .illu{
+        display: none;
+    }
+
+}
