@@ -15,12 +15,28 @@ body{
 
 h1, h2, h3{
     font-family: 'Poppins', sans-serif;
+    color: #003679;
 }
 
 h1{
-    color: #003679;
     font-size: 55px;
     font-weight: 700;
+}
+
+h2{
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+h2 span{
+    color: #3DE2BB;
 }
 
 h1 span{
@@ -110,6 +126,30 @@ header .navbar-collapse{
 #banner .content span{
     font-weight: 600;
     margin-right: 10px;
+}
+
+/************************ Services **************************
+************************************************************/
+
+#services{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#services .subtitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: #0074E7;
+}
+
+#services .items{
+    margin-top: 50px;
+}
+
+#services .item{
+    padding: 30px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(35, 81, 149, 0.15);
 }
 
 /************************ Footer **************************
