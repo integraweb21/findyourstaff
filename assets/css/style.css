@@ -35,15 +35,16 @@ h3{
     line-height: 30px;
 }
 
-h2 span{
-    color: #3DE2BB;
-}
-
-h1 span{
+.blue{
     color: #0074E7;
 }
 
+.green{
+    color: #3DE2BB;
+}
+
 .btn-blue{
+    display: inline-block;
     color: #fff !important;
     background-color: #0074E7;
     border-radius: 12px;
@@ -150,6 +151,43 @@ header .navbar-collapse{
     padding: 30px;
     border-bottom-right-radius: 50px;
     box-shadow: 0px 4px 10px rgba(35, 81, 149, 0.15);
+}
+
+/************** Concept ***************
+**************************************/
+
+#concept{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/************** Besoins ***************
+**************************************/
+
+#besoins{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#besoins h2{
+    margin-bottom: 30px;
+}
+
+#besoins p{
+    margin-bottom: 0px;
+}
+
+#besoins .content{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#besoins .item{
+    margin-bottom: 30px;
+    padding: 50px 100px;
+    box-shadow: 0px 4px 10px rgba(35, 81, 149, 0.15);
+    border-radius: 11px;
 }
 
 /************************ Footer **************************
