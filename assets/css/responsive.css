@@ -9,6 +9,14 @@
         padding-bottom: 191px;
     }
 
+    /* Concept */
+
+    #concept .bg-concept h3{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
     /* Footer */
 
     footer nav ul{

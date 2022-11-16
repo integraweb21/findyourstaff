@@ -2,33 +2,24 @@ $(document).ready(function(){
 
     // Owl Carousel
 
-    var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            loop:true,
-            margin:10,
-            autoplay:true,
-            autoplayTimeout:3000,
-            autoplayHoverPause:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                520:{
-                    items:3
-                },
-                768:{
-                    items:5
-                },
-                992:{
-                    items:7
-                }
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        navContainer: '#customNav',
+        navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
+        dots:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            768:{
+                items:3
+            },
+            992:{
+                items:4
             }
-        });
-        $('.play').on('click',function(){
-            owl.trigger('play.owl.autoplay',[1000])
-        })
-        $('.stop').on('click',function(){
-            owl.trigger('stop.owl.autoplay')
+        }
     })
 
 })

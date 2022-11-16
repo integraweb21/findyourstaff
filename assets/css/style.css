@@ -55,6 +55,18 @@ h3{
     background-color: #005BB5;
 }
 
+.btn-dark{
+    display: inline-block;
+    color: #fff !important;
+    background-color: #003679;
+    border-radius: 12px;
+    padding: 10px 30px;   
+}
+
+.btn-dark:hover{
+    background-color: #002149;
+}
+
 /************** Header ***************
 *************************************/
 
@@ -108,7 +120,7 @@ header .navbar-collapse{
     top: 44px;
     width: 100%;
     height: 680px;
-    background-image: url('img/header_home.png');
+    background-image: url('img/header-home.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -144,13 +156,41 @@ header .navbar-collapse{
 }
 
 #services .items{
+    position: relative;
     margin-top: 50px;
 }
 
 #services .item{
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    height: 100%;
     padding: 30px;
     border-bottom-right-radius: 50px;
     box-shadow: 0px 4px 10px rgba(35, 81, 149, 0.15);
+}
+
+#services .items:after{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: -60px;
+    bottom: -75px;
+    width: 294px;
+    height: 278px;
+    background-image: url('img/deco-trame-bloc.webp');
+}
+
+#services .item .img{
+    display: inline-block;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 116, 231, 0.1);
+}
+
+#services .item i{
+    color: #3DE2BB;
+    font-size: 24px;
 }
 
 /************** Concept ***************
@@ -159,6 +199,112 @@ header .navbar-collapse{
 #concept{
     margin-top: 50px;
     margin-bottom: 50px;
+    color: #fff;
+}
+
+#concept h2{
+    margin-bottom: 70px;
+}
+
+#concept h3{
+    font-size: 30px;
+}
+
+#concept .subtitle{
+    color: #003679;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#concept .bg-concept{
+    background-image: url('img/bg-concept.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 79px;
+    border-radius: 15px;
+}
+
+#concept .bg-concept h3{
+    color: #fff;
+    line-height: 44px;
+}
+
+#concept .clients h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+/************** Avis ***************
+***********************************/
+
+#avis{
+    background-color: rgba(0, 116, 231, 0.1);
+    padding-top: 65px;
+    padding-bottom: 65px;
+    overflow: hidden;
+}
+
+#avis .title-nav{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#avis .owl-controls{
+    margin-top: 40px;
+}
+
+#avis .owl-nav .owl-prev, #avis .owl-nav .owl-next{
+    border-radius: 30px;
+    background-color: rgba(0, 54, 121, 0.1);
+    margin: 0 5px;
+    border: none;
+}
+
+#avis .owl-nav i{
+    padding: 15px 13px;
+    color: #0074E7;
+}
+
+#avis .container{
+    position: relative;
+}
+
+#avis .item .quote{
+    width: 38px;
+    margin-bottom: 15px;
+}
+
+#avis .item .infos{
+    display: flex
+}
+
+#avis .item .infos .img img{
+    width: 65px;
+}
+
+#avis .item .name{
+    margin-left: 10px;
+} 
+
+#avis .owl-avis{
+    width: 100vw;
+}
+
+#avis .owl-avis .item{
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px rgba(35, 81, 149, 0.3);
+    border-radius: 15px;
+}
+
+#avis .owl-avis p{
+    font-size: 14px;
+}
+
+#avis .owl-item{
+    padding: 15px;
 }
 
 /************** Besoins ***************
@@ -166,7 +312,6 @@ header .navbar-collapse{
 
 #besoins{
     padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 #besoins h2{
@@ -177,10 +322,14 @@ header .navbar-collapse{
     margin-bottom: 0px;
 }
 
-#besoins .content{
+#besoins .left .content{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+#besoins .content img{
+    margin-bottom: 15px;
 }
 
 #besoins .item{
@@ -188,6 +337,128 @@ header .navbar-collapse{
     padding: 50px 100px;
     box-shadow: 0px 4px 10px rgba(35, 81, 149, 0.15);
     border-radius: 11px;
+}
+
+/* valeurs */
+
+.valeurs{
+    color: #fff;
+    background-color: #0074E7;
+    border-radius: 15px;
+    padding: 45px;
+    position: relative;
+    top: 85px;
+}
+
+.valeurs p{
+    font-size: 30px;
+}
+
+.valeurs p span{
+    font-size: 20px;
+}
+
+.valeurs a{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* chiffres */
+
+.chiffres{
+    background-color: rgba(0, 116, 231, 0.1);
+    padding-top: 200px;
+    padding-bottom: 95px;
+}
+
+.chiffres h3{
+    font-size: 30px;
+    line-height: 43px;
+}
+
+.chiffres .top{
+    margin-bottom: 20px;
+}
+
+.chiffres .bottom{
+    margin-top: 20px;
+}
+
+.chiffres .left p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px !important;
+}
+
+.chiffres .right .blue{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.chiffres .right p{
+    color: #101130;
+    font-size: 14px;
+}
+
+/************************ FAQ **************************
+*******************************************************/
+
+#faq{
+    background-color: #003679;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#faq h2, #faq h3{
+    color: #fff;
+}
+
+#faq h2{
+    margin-bottom: 70px;
+}
+
+#faq h3{
+    font-size: 37px;
+    margin-bottom: 20px;
+}
+
+#faq .left p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Accordion */
+
+#faq .accordion{
+    --bs-accordion-bg: transparent;
+}
+
+#faq .accordion-item{
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 10px #222F43;
+    border-radius: 11px;
+    background-color: #fff;
+}
+
+#faq .accordion-button:not(.collapsed){
+    background-color: transparent;
+    border: none;
+}
+
+#faq .accordion-item .reponse{
+    font-size: 14px;
+    color: #003679;
+    padding: 15px;
+}
+
+#faq .accordion-item p{
+    margin-bottom: 0px;
+}
+
+#faq .accordion-item h2{
+    margin-bottom: 0px;
 }
 
 /************************ Footer **************************
