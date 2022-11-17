@@ -103,10 +103,32 @@ header nav{
 }
 
 header nav a{
+    position: relative;
     color: #003679 !important;
     padding-left: 25px !important;
     padding-right: 25px !important;
 }
+
+header nav a.hov:hover{
+    color: #0074E7 !important;
+}
+
+header nav a.hov:after {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    height: 2px;
+    bottom: 0;
+    content: "";
+    background-color: #0074E7;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: translate3d(0, 0, 0);
+}
+
+header nav a.hov:hover:after {
+    left: 40px;
+    right: 42px;
+  }
 
 header .navbar-collapse{
     flex-grow: inherit;
@@ -333,10 +355,36 @@ header .navbar-collapse{
 }
 
 #besoins .item{
+    position: relative;
     margin-bottom: 30px;
     padding: 50px 100px;
     box-shadow: 0px 4px 10px rgba(35, 81, 149, 0.15);
     border-radius: 11px;
+}
+
+#besoins .item.expert:before, #besoins .item.rocket:before, #besoins .item.candidat:before{
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 35px;
+}
+
+#besoins .item.expert:before{
+    background-image: url('img/icons/icon_expert.png');
+    width: 32px;
+    height: 27px;
+}
+
+#besoins .item.rocket:before{
+    background-image: url('img/icons/icon_rocket.png');
+    width: 28px;
+    height: 28px;
+}
+
+#besoins .item.candidat:before{
+    background-image: url('img/icons/icon_candidat.png');
+    width: 28px;
+    height: 32px;
 }
 
 /* valeurs */
