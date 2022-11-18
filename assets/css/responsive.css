@@ -17,6 +17,22 @@
         transform: translateY(-50%);
     }
 
+    /* Recrutement */
+
+    .selection, .strategie{
+        position: relative;
+        top: 70px;
+    }
+
+    .onboarding, .recrutement{
+        position: relative;
+        top: 120px;
+    }
+
+    .signature{
+        margin-top: 15px;
+    }
+
     /* Footer */
 
     footer nav ul{
