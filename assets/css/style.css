@@ -43,6 +43,10 @@ h3{
     color: #3DE2BB;
 }
 
+.strike{
+    text-decoration: line-through;
+}
+
 .btn-blue{
     display: inline-block;
     color: #fff !important;
@@ -600,6 +604,159 @@ header .navbar-collapse{
     width: 100%;
     padding: 50px;
     border-radius: 15px;
+}
+
+/************************ Formules **************************
+************************************************************/
+
+#price{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#price h4{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+#price .form-switch{
+    padding-left: 0px;
+}
+
+#price .form-check-input{
+    width: 57px;
+    height: 31px;
+    margin: 0 auto;
+    float: none;
+}
+
+#price .item-header{
+    color: #fff;
+    border-bottom-right-radius: 50px;
+    padding: 20px;
+}
+
+#price .saturne .item-header{
+    background-color: #0074E7;
+}
+
+#price .jupiter .item-header{
+    background-color: #0133AB;
+}
+
+#price .lumiere .item-header{
+    background-color: #003679;
+}
+
+#price .price-m, #price .price-a{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+#price .month-m, #price .month-a{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#price .month-a, #price .price-a{
+    display: none;
+}
+
+#price .content{
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(35, 81, 149, 0.15);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#price .content li{
+    padding: 10px;
+}
+
+#price .content li.active{
+    list-style-image: url("img/icons/active.png");
+}
+
+#price .content li.time{
+    list-style-image: url("img/icons/time.png");
+}
+
+#price .content li.inactive{
+    list-style-image: url("img/icons/inactive.png");
+}
+
+#price .btn-border{
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+#price .saturne .btn-border{
+    border: 1px solid #0074E7;
+    color: #0074E7;
+}
+
+#price .saturne .btn-border:hover{
+    background-color: #0074E7;
+    color: #fff;
+}
+
+#price .jupiter .btn-border{
+    border: 1px solid #0133AB;
+    color: #0133AB;
+}
+
+#price .jupiter .btn-border:hover{
+    background-color: #0133AB;
+    color: #fff;
+}
+
+#price .lumiere .btn-border{
+    border: 1px solid #003679;
+    color: #003679;
+}
+
+#price .lumiere .btn-border:hover{
+    background-color: #003679;
+    color: #fff;
+}
+
+#price .msg-formule{
+    padding-top: 100px;
+}
+
+#price .msg-formule p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#price .msg-formule:before{
+    content: "";
+    display: block;
+    background-color: #003679;
+    height: 1px;
+    width: 130px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 40px;
+}
+
+#price .msg-formule:after{
+    content: "";
+    display: block;
+    background-color: #003679;
+    height: 1px;
+    width: 130px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
 }
 
 /************************ Footer **************************

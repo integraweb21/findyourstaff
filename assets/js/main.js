@@ -20,6 +20,27 @@ $(document).ready(function(){
                 items:4
             }
         }
-    })
+    });
+
+    $('#flexSwitchCheckDefault').click(function(){
+        let val = $(this).val();
+        //first click
+        if(val == 'on'){
+            val = 'an';
+        }
+        if(val == 'mois'){
+            $(this).val('an');
+            $('.price-m').show();
+            $('.price-a').hide();
+            $('.month-m').show();
+            $('.month-a').hide();
+        }else if(val == 'an'){
+            $(this).val('mois');
+            $('.price-m').hide();
+            $('.price-a').show();
+            $('.month-m').hide();
+            $('.month-a').show();
+        }
+    });
 
 })
