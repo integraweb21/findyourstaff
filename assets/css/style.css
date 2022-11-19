@@ -43,16 +43,23 @@ h3{
     color: #3DE2BB;
 }
 
+.gold{
+    color: #CA950E;
+}
+
 .strike{
     text-decoration: line-through;
 }
 
-.btn-blue{
+.btn-blue, .btn-dark, .btn-light, .btn-gold{
     display: inline-block;
     color: #fff !important;
-    background-color: #0074E7;
     border-radius: 12px;
     padding: 10px 30px;
+}
+
+.btn-blue{
+    background-color: #0074E7;
 }
 
 .btn-blue:hover{
@@ -60,11 +67,7 @@ h3{
 }
 
 .btn-dark{
-    display: inline-block;
-    color: #fff !important;
     background-color: #003679;
-    border-radius: 12px;
-    padding: 10px 30px;   
 }
 
 .btn-dark:hover{
@@ -72,15 +75,42 @@ h3{
 }
 
 .btn-light{
-    display: inline-block;
-    color: #fff !important;
     background: rgba(255, 255, 255, 0.3);
-    border-radius: 12px;
-    padding: 10px 30px;   
 }
 
 .btn-light:hover{
     background: rgba(255, 255, 255, 0.2);
+}
+
+.btn-gold{
+    background-color: #CA950E;
+}
+
+/* Item radius */
+
+.item-radius{
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    height: 100%;
+    padding: 30px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(35, 81, 149, 0.15);
+}
+
+#services .item-radius .img{
+    background-color: rgba(0, 116, 231, 0.1);
+}
+
+.item-radius .img{
+    display: inline-block;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.item-radius i{
+    color: #3DE2BB;
+    font-size: 24px;
 }
 
 /************** Header ***************
@@ -209,37 +239,20 @@ header .navbar-collapse{
     margin-top: 50px;
 }
 
-#services .item{
-    position: relative;
-    z-index: 1;
-    background-color: #fff;
-    height: 100%;
-    padding: 30px;
-    border-bottom-right-radius: 50px;
-    box-shadow: 0px 4px 10px rgba(35, 81, 149, 0.15);
-}
-
 #services .items:after{
     content: "";
     position: absolute;
     z-index: 0;
     left: -60px;
-    bottom: -75px;
+    bottom: -55px;
     width: 294px;
     height: 278px;
     background-image: url('img/deco-trame-bloc.webp');
 }
 
-#services .item .img{
-    display: inline-block;
+#services .item{
+    margin-top: 15px;
     margin-bottom: 15px;
-    border-radius: 10px;
-    background-color: rgba(0, 116, 231, 0.1);
-}
-
-#services .item i{
-    color: #3DE2BB;
-    font-size: 24px;
 }
 
 /************** Concept ***************
@@ -757,6 +770,30 @@ header .navbar-collapse{
     margin: 0 auto;
     position: relative;
     top: 20px;
+}
+
+#services-formule{
+    padding-bottom: 80px;
+    background: linear-gradient(180deg, rgba(0, 116, 231, 0) 0%, rgba(0, 116, 231, 0.1) 100%);
+}
+
+#services-formule h2{
+    margin-bottom: 50px;
+}
+
+/* Premium */
+
+#premium{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#premium h2{
+    margin-bottom: 50px;
+}
+
+#premium .items{
+    margin-bottom: 50px;
 }
 
 /************************ Footer **************************
