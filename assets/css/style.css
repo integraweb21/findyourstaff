@@ -35,6 +35,10 @@ h3{
     line-height: 30px;
 }
 
+.bg-blue{
+    background-color: rgba(0, 116, 231, 0.1);
+}
+
 .blue{
     color: #0074E7;
 }
@@ -636,6 +640,7 @@ header .navbar-collapse{
 
 #price .form-switch{
     padding-left: 0px;
+    margin-bottom: 15px;
 }
 
 #price .form-check-input{
@@ -643,6 +648,14 @@ header .navbar-collapse{
     height: 31px;
     margin: 0 auto;
     float: none;
+    position: relative;
+    top: 15px;
+}
+
+#price .mensuel, #price .annuel{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #price .item-header{
@@ -794,6 +807,37 @@ header .navbar-collapse{
 
 #premium .items{
     margin-bottom: 50px;
+}
+
+/************************ Contact **************************
+***********************************************************/
+
+#contact{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#contact h1{
+    margin-bottom: 50px;
+}
+
+label{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=tel], input[type=email], textarea{
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(35, 81, 149, 0.15);
+    border-radius: 5px;
+    padding: 20px;
+    border: none;
+}
+
+input[type=submit]{
+    border: none;
 }
 
 /************************ Footer **************************
