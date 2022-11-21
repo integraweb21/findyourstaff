@@ -90,6 +90,14 @@ h3{
     background-color: #CA950E;
 }
 
+.btn-white{
+    background-color: #fff;
+    display: inline-block;
+    color: #0133AB;
+    border-radius: 12px;
+    padding: 10px 30px;
+}
+
 /* Item radius */
 
 .item-radius{
@@ -553,6 +561,171 @@ header .navbar-collapse{
 
 #faq .accordion-item h2{
     margin-bottom: 0px;
+}
+
+/************************ Marque employeur **************************
+********************************************************************/
+
+#candidats{
+    padding-bottom: 50px;
+}
+
+#candidats .left .content{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#candidats .blue{
+    font-size: 40px;
+    font-weight: 700;
+    color: #0074E7;
+}
+
+#candidats p{
+    font-size: 14px;
+}
+
+#marque{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#marque h2{
+    margin-bottom: 55px;
+}
+
+#marque h2 span{
+    font-size: 30px;
+}
+
+#step{
+    background-color: rgba(0, 116, 231, 0.1);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 100px;
+}
+
+#step h4{
+    font-weight: 700;
+    color: #003679;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#step .chiffre{
+    display: inline-block;
+    font-size: 40px;
+    color: #0074E7;
+    background-color: #fff;
+    margin-bottom: 0px;
+    border-radius: 50px;
+}
+
+#step .left, #step .middle{
+    position: relative;
+}
+
+#step .left .chiffre{
+    padding: 16px 40px;
+}
+
+#step .middle .chiffre{
+    padding: 16px 35px;
+}
+
+#step .right .chiffre{
+    padding: 16px 34px;
+}
+
+#step .left .chiffre:after, #step .middle .chiffre:after{
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -80px;
+    background-image: url('img/arrow.png');
+    width: 180px;
+    height: 14px;
+}
+
+#card-color{
+    margin-bottom: 100px;
+}
+
+#card-color h2{
+    margin-bottom: 55px;
+}
+
+#card-color h2 span{
+    font-size: 30px;
+}
+
+#card-color h4{
+    color: #fff;
+    font-weight: 700;
+}
+
+#card-color p{
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+#card-color .top{
+    margin-bottom: 40px;
+}
+
+#card-color .light, #card-color .dark{
+    height: 100%;
+    color: #fff;
+    padding: 50px;
+    box-shadow: 0px 4px 20px rgba(35, 81, 149, 0.35);
+}
+
+#card-color .light{
+    background-color: #0074E7;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#card-color .dark{
+    background-color: #0133AB;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#outils-rh{
+    margin-bottom: 100px;
+}
+
+#outils-rh h2{
+    margin-bottom: 50px;
+}
+
+#outils-rh .items{
+    margin-bottom: 45px;
+}
+
+#outils-rh .bg-recrutement{
+    margin-top: 100px;
+}
+
+#outils-rh .bg-recrutement .content{
+    background-image: url('img/bandeau-marque.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+#outils-rh .bg-recrutement h3{
+    color: #fff;
+    font-size: 30px;
+}
+
+#outils-rh .bg-recrutement p{
+    color: #fff;
+    font-size: 20px;
 }
 
 /************************ Recrutement **************************
