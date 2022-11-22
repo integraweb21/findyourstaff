@@ -44,6 +44,11 @@ blockquote{
     font-style: normal;
 }
 
+.hash-title{
+    font-weight: 700;
+    font-size: 25px;
+}
+
 .bg-blue{
     background-color: rgba(0, 116, 231, 0.1);
 }
@@ -566,6 +571,7 @@ header .navbar-collapse{
 
 #faq .accordion-item p{
     margin-bottom: 0px;
+    color: #003679;
 }
 
 #faq .accordion-item h2{
