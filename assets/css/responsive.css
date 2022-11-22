@@ -46,9 +46,59 @@
     }
 }
 
+/* Mobile & tablette */
+
+@media screen and (max-width: 992px){
+
+    /* Mise en page */
+
+    h1{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    #banner{
+        text-align: center;
+    }
+
+    /* Navigation */
+
+    header .top span{
+        position: inherit;
+        top: inherit;
+        right: inherit;
+    }
+
+    /* Footer */
+
+    footer{
+        text-align: center;
+    }
+
+    footer .top{
+        padding-bottom: 0px;
+    }
+
+    footer .linkedin{
+        margin-bottom: 15px;
+    }
+
+    footer .linkedin a{
+        position: inherit;
+        bottom: inherit;
+    }
+
+}
+
 /* Tablette */
 
-@media all and (min-width: 768px) and (max-width: 992px){}
+@media all and (min-width: 768px) and (max-width: 992px){
+
+}
 
 /* Mobile */
 
@@ -56,8 +106,16 @@
 
     /* Banner */
 
-    #banner .illu{
+    #banner .illu, #banner .bg-banner, #banner .bg-page{
         display: none;
+    }
+
+    header, #banner{
+        background-color: rgba(0, 116, 231, 0.1);
+    }
+
+    #banner{
+        padding-bottom: 30px;
     }
 
 }
