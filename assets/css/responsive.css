@@ -33,6 +33,13 @@
         margin-top: 15px;
     }
 
+    /* Price */
+
+    #price .lumiere .btn-border{
+        position: relative;
+        top: 125px;
+    }
+
     /* Footer */
 
     footer nav ul{

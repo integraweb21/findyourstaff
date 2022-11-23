@@ -879,11 +879,15 @@ header .navbar-collapse{
     display: none;
 }
 
-#price .content{
-    padding: 20px;
+#price .item{
+    height: 100%;
     box-shadow: 0px 4px 10px rgba(35, 81, 149, 0.15);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+#price .content{
+    padding: 20px;
 }
 
 #price .content li{
