@@ -550,6 +550,11 @@ header .navbar-collapse{
     font-weight: 600;
 }
 
+#faq li{
+    font-size: 14px;
+    color: #003679;
+}
+
 /* Accordion */
 
 #faq .accordion{
@@ -723,6 +728,11 @@ header .navbar-collapse{
 
 #outils-rh .items{
     margin-bottom: 45px;
+}
+
+#outils-rh .img{
+    background: linear-gradient(135.7deg, #0074E7 0%, rgba(0, 116, 231, 0) 129.38%);
+    border-radius: 10px;
 }
 
 #outils-rh .bg-recrutement{
